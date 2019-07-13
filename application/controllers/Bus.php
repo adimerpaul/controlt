@@ -25,6 +25,12 @@ class Bus extends CI_Controller{
         $tipotransporte=$_POST['tipotransporte'];
         $idtransporte=$_POST['idtransporte'];
         $unidad=$_POST['unidad'];
+        if ($idtransporte==""){
+            $this->db->query("INSERT INTO transporte SET placa='$placa' , tipotransporte='$tipotransporte'");
+            $idtransporte=$this->db->insert_id();
+        }
+
+
         $this->db->query("INSERT INTO ucoi SET 
         iddestino='$iddestino',
         pia='$pia',
