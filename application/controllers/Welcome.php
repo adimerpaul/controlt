@@ -29,6 +29,7 @@ class Welcome extends CI_Controller {
         if ($query->num_rows()){
             $row=$query->row();
             $_SESSION['user']=$row->user;
+            $_SESSION['iduser']=$row->iduser;
             $_SESSION['tipo']=$row->tipo;
             header("Location: ".base_url()."Main");
         }else{

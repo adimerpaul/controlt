@@ -34,7 +34,16 @@
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
 <script src="assets/js/jquery.dataTables.min.js"></script>
+<script src="assets/js/dataTables.buttons.min.js"></script>
+<script src="assets/js/buttons.flash.min.js"></script>
+<script src="assets/js/jszip.min.js"></script>
+<script src="assets/js/pdfmake.min.js"></script>
+<script src="assets/js/vfs_fonts.js"></script>
+<script src="assets/js/buttons.html5.min.js"></script>
+<script src="assets/js/buttons.print.min.js"></script>
+
 <script src="assets/libs/js/main-js.js"></script>
+<script src="assets/js/toastr.min.js"></script>
 </body>
 
 </html>

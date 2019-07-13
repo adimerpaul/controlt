@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/libs/css/style.css">
     <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
 </head>
 
 <body>
@@ -147,6 +149,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav flex-column">
+                        <?php
+                        if ($_SESSION['tipo']=='control'):
+                        ?>
                         <li class="nav-divider">
                             Menu
                         </li>
@@ -199,7 +204,18 @@
                             <!--                            </div>-->
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa fa-fw fa-rocket"></i>Comisos generales</a>
+                            <a class="nav-link" href="<?=base_url()?>Comisos"><i class="fa fa-fw fa-rocket"></i>Comisos generales</a>
+                        </li>
+
+                        <?php endif;?>
+                        <li class="nav-divider">
+                            Reportes
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?=base_url()?>Busprint"><i class="fa fa-fw fa-file-pdf"></i>Flotas y minibuces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?=base_url()?>Comisosprint"><i class="fa fa-fw fa-file-archive"></i>Comisos generales</a>
                         </li>
                         <!--                        <li class="nav-item">-->
                         <!--                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>UI Elements</a>-->
